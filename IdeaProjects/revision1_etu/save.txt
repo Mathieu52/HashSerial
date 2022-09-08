@@ -1,0 +1,10 @@
+Stationement :
+  1 - Libre
+  2 - Libre
+  3 - Camion{NIP='C', etatTransmission=NEUF, etatCarosserie=TRES_BRISE, etatEspaceCargaison=NEUF, etatMoteur=NEUF}
+  4 - Automobile{NIP='D', etatTransmission=NEUF, etatHabitacle=NEUF, etatCarosserie=NEUF, etatMoteur=BRISE}
+Garage :
+  1 - Automobile{NIP='A', etatTransmission=TRES_BRISE, etatHabitacle=NEUF, etatCarosserie=NEUF, etatMoteur=BRISE}
+  2 - Moto{NIP='B', etatMoteur=NEUF, etatTransmission=BRISE}
+  3 - Libre
+  4 - Libre
