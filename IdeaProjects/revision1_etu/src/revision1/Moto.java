@@ -1,5 +1,7 @@
 package revision1;
 
+import java.io.Serializable;
+
 public class Moto extends Vehicule<Moto.Piece> {
     public enum Piece {Transmission, Moteur}
 

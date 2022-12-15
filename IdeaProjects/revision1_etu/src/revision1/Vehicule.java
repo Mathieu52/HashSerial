@@ -1,5 +1,6 @@
 package revision1;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,7 +8,7 @@ import java.util.Objects;
 
 
 
-public abstract class Vehicule <PieceEnum extends Enum<PieceEnum>> {
+public abstract class Vehicule <PieceEnum extends Enum<PieceEnum>> implements Serializable {
     public enum Etat {TRES_BRISE, BRISE, REPARE, NEUF}
     private static Etat ETAT_DEFAULT = Etat.NEUF;
 

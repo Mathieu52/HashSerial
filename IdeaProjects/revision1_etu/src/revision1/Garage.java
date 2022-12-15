@@ -1,7 +1,7 @@
 package revision1;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import javax.imageio.ImageWriter;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -174,6 +174,29 @@ public class Garage {
         System.out.println("fin de l'historique");
     }
 
+    /*
+    public void enregisteVehicule(String nomFichier) {
+        try (ObjectOutputStream objectWriter = new ObjectOutputStream(new FileOutputStream(nomFichier))) {
+            objectWriter.writeObject(stationnements);
+            objectWriter.writeObject(garages);
+            objectWriter.writeObject(historique);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void lireVehicule(String nomFichier) {
+        try (ObjectInputStream objectReader = new ObjectInputStream(new FileInputStream(nomFichier))) {
+            stationnements = (Vehicule[]) objectReader.readObject();
+            garages = (Vehicule[]) objectReader.readObject();
+            historique = (HashMap<LocalDateTime, String>) objectReader.readObject();
+            System.out.println(historique.keySet().size());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+    */
+
     public void enregisteVehicule(String nomFichier) {
         try (FileWriter fileWriter = new FileWriter(nomFichier)) {
             fileWriter.write("Stationement :\n");
@@ -189,6 +212,5 @@ public class Garage {
             e.printStackTrace();
         }
     }
-
 
 }

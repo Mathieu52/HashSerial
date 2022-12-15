@@ -32,6 +32,8 @@ public class Application {
         garage.entreVehiculeGarage(autoB,2);
 
         garage.enregisteVehicule("save.txt");
+        //garage = new Garage(4);
+        //garage.lireVehicule("save.txt");
 
         garage.repare();
         garage.sortVehicule(1,garage.trouvePlace());
